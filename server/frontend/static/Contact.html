@@ -1,10 +1,125 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/static/style.css">
-        <link rel="stylesheet" href="/static/bootstrap.min.css">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        .contact-container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .contact-header {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid darkturquoise;
+        }
+        .info-box {
+            background: #6c4284;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            height: 100%;
+        }
+        .btn-submit {
+            background-color: darkturquoise;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            font-weight: bold;
+        }
+        .btn-submit:hover {
+            background-color: #00ced1;
+        }
+    </style>
+</head>
+<body>
 
-    </head>
-    <body>
-    </body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <div class="container contact-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-header">
+                    <h1>Get In Touch</h1>
+                    <p>Have questions about a specific model or want to schedule a test drive? Our team is ready to help you find your dream car.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+                <h3>Send us a Message</h3>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="John Doe">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Subject</label>
+                        <select class="form-select">
+                            <option>General Inquiry</option>
+                            <option>Schedule Test Drive</option>
+                            <option>Financing Options</option>
+                            <option>Service & Maintenance</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" placeholder="How can we help you today?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Submit Inquiry</button>
+                </form>
+            </div>
+
+            <div class="col-md-5">
+                <div class="info-box">
+                    <h4>Visit Our Showroom</h4>
+                    <hr style="border-color: rgba(255,255,255,0.3)">
+                    <p><strong>Address:</strong><br>
+                    1234 Velocity Blvd<br>
+                    Motor City, MI 48201</p>
+                    
+                    <p><strong>Phone:</strong><br>
+                    (555) 012-3456</p>
+                    
+                    <p><strong>Email:</strong><br>
+                    concierge@bestcars.com</p>
+
+                    <h4 class="mt-4">Business Hours</h4>
+                    <hr style="border-color: rgba(255,255,255,0.3)">
+                    <ul class="list-unstyled">
+                        <li>Monday - Friday: 9:00 AM - 8:00 PM</li>
+                        <li>Saturday: 10:00 AM - 6:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
