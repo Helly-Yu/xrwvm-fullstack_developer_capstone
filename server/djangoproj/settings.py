@@ -136,6 +136,7 @@ MEDIA_URL = '/media/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+APPEND_SLASH=False
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/static'),
