@@ -1,0 +1,10 @@
+{
+  "esversion": 8,
+  "asi": false,
+  "undef": true,
+  "unused": true,
+  "node": true,
+  "globals": {
+    "fetch": true
+  }
+}
